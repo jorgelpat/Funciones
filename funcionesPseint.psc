@@ -33,19 +33,32 @@ FinFuncion
 
 Algoritmo funciones
 	
-	res = suma(4,7)
-	s = res
-	res = resta(3,8)
-	r = res
-	res = mult(2,9)
-	m = res
-	res = divi(10,5)
-	d = res
+	Escribir "Ingrese numero 1"
+	Leer s1
+	Escribir "Ingrese numero 2"
+	Leer s2
+	Escribir "Elija la operacion"
+	Escribir "1. Suma"
+	Escribir "2. Resta"
+	Escribir "3. Multiplicación"
+	Escribir "4. División"
+	Leer op
 	
-	Escribir s
-	Escribir r
-	Escribir m
-	Escribir d
+	Si op == "1" Entonces
+		Escribir suma(s1,s2)
+	FinSi
 	
+	Si op == "2" Entonces
+		Escribir resta(s1,s2)
+	FinSi
 	
+	Si op == "3" Entonces
+		Escribir mult(s1,s2)
+	FinSi
+	
+	Si op == "4" Entonces
+		Escribir divi(s1,s2)
+	FinSi
+	
+	Escribir resultado
 FinAlgoritmo
